@@ -1,2 +1,20 @@
+# Databases & Private Security Keys
 .env
+secrets.toml
+
+# Local Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python compiled caching files
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Operating System system junk
+Thumbs.db
+.DS_Store
