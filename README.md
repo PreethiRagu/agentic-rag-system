@@ -1,42 +1,38 @@
+# Agentic RAG System with Multi-LLM Orchestration
 
-# Agentic RAG using CrewAI
+An advanced, production-ready Retrieval-Augmented Generation (RAG) application built using **CrewAI** and **Streamlit**. The system intelligently parses, chunks, and searches through uploaded PDF documents using semantic analysis, falling back to live web search whenever document context is insufficient.
 
-This project leverages CrewAI to build an Agentic RAG that can search through your docs and fallbacks to web search in case it doesn't find the answer in the docs, have option to use either of deep-seek-r1 or llama 3.2 that runs locally. More details un Running the app section below!
-
-Before that, make sure you grab your FireCrawl API keys to search the web.
-
-**Get API Keys**:
-   - [FireCrawl](https://www.firecrawl.dev/i/api)
-
-### Watch Demo on YouTube
-[![Watch Demo on YouTube](https://github.com/patchy631/ai-engineering-hub/blob/main/agentic_rag/thumbnail/thumbnail.png)](https://youtu.be/O4yBW_GTRk0)
-
-
-## Installation and setup
-
-**Get API Keys**:
-   - [FireCrawl](https://www.firecrawl.dev/i/api)
-
-
-**Install Dependencies**:
-   Ensure you have Python 3.11 or later installed.
-   ```bash
-   pip install crewai crewai-tools chonkie[semantic] markitdown qdrant-client fastembed
-   ```
-
-**Running the app**:
-
-To use deep-seek-rq use command ``` streamlit run app_deep_seek.py ```, for llama 3.2 use command ``` streamlit run app_llama3.2.py ```
+##  Live Application
+🔗 **[Click Here to Access the Live App Space]((https://agentic-rag-system-3gr6lrvk7qdrjmrihjmiks.streamlit.app/))** 
 
 ---
 
-## 📬 Stay Updated with Our Newsletter!
-**Get a FREE Data Science eBook** 📖 with 150+ essential lessons in Data Science when you subscribe to our newsletter! Stay in the loop with the latest tutorials, insights, and exclusive resources. [Subscribe now!](https://join.dailydoseofds.com)
-
-[![Daily Dose of Data Science Newsletter](https://github.com/patchy631/ai-engineering/blob/main/resources/join_ddods.png)](https://join.dailydoseofds.com)
+## Key Technical Features
+- **Multi-Model Orchestration:** Supports local and cloud deployment architectures utilizing **Llama 3.2** and **DeepSeek-R1** processors via Groq.
+- **Agentic Workflow Architecture:** Powered by **CrewAI** agents configured with explicit search roles, goals, and backstories to maximize response accuracy.
+- **Advanced Semantic Chunking:** Replaced standard token splitting with advanced semantic splitters (`Chonkie` & Microsoft's `MarkItDown`) to preserve structural meaning during text ingestion.
+- **Cloud Vector Indexing:** Connects seamlessly to a high-performance **Qdrant Cloud** vector database cluster for fast, dense document retrieval.
+- **Autonomous Web Fallback:** Integrated with a **Firecrawl** tool agent to scour live web indexes if the uploaded document lacks direct answers.
 
 ---
 
-## Contribution
+##  Technology Stack
+- **Frontend / UI:** Streamlit Framework
+- **Agentic Framework:** CrewAI, LangChain
+- **Inference Engines:** Groq API (Llama 3.2 / DeepSeek-R1)
+- **Vector Storage:** Qdrant Cloud DB
+- **Document Processing:** MarkItDown, Chonkie Parsing Engine
 
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+---
+
+## 📂 Repository Structure
+```text
+├── assets/                  # UI assets and logos
+├── src/
+│   └── agentic_rag/        # Core agent and tool logic
+├── thumbnail/               # Media and documentation graphics
+├── .gitignore               # Excludes environment files and system caches
+├── README.md                # Main repository documentation
+├── app_deep_seek.py         # App version configured for DeepSeek-R1
+├── app_llama3.2.py          # Main deployment file utilizing Llama 3.2
+└── requirements.txt         # Tailored, clean production dependencies
