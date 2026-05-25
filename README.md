@@ -34,18 +34,29 @@ An advanced, production-ready Retrieval-Augmented Generation (RAG) application b
 ├── .gitignore               # Excludes environment files and system caches
 ├── README.md                # Main repository documentation
 ├── app_deep_seek.py         # App version configured for DeepSeek-R1
-├── app_llama3.2.py          # Main deployment file utilizing Llama 3.2
-└── requirements.txt         # Tailored, clean production dependencies
 
 ---
-##📦 Installation and Setup Guide
 
-Follow these step-by-step instructions to configure environment keys, install the required dependencies, and run the Agentic RAG application locally on your machine.
+# 📦 Installation and Setup Guide
+
+Follow the steps below to set up and run the Agentic RAG System locally.
 
 ---
 
 ## 🛠️ Prerequisites
-Ensure you have **Python 3.10 or Python 3.11** installed on your system. You can verify this by opening your terminal or command prompt and running:
+
+Make sure you have the following installed on your system:
+
+- Python 3.10 or 3.11
+- Git
+- pip (Python package manager)
+
+Check Python version:
+
 ```bash
 python --version
+├── app_llama3.2.py          # Main deployment file utilizing Llama 3.2
+└── requirements.txt         # Tailored, clean production dependencies
+
+
 
