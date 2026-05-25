@@ -3,7 +3,7 @@
 An advanced, production-ready Retrieval-Augmented Generation (RAG) application built using **CrewAI** and **Streamlit**. The system intelligently parses, chunks, and searches through uploaded PDF documents using semantic analysis, falling back to live web search whenever document context is insufficient.
 
 ##  Live Application
-🔗 **[Click Here to Access the Live App Space]((https://agentic-rag-system-3gr6lrvk7qdrjmrihjmiks.streamlit.app/))** 
+🔗 **[https://agentic-rag-system-3gr6lrvk7qdrjmrihjmiks.streamlit.app](https://agentic-rag-system-3gr6lrvk7qdrjmrihjmiks.streamlit.app)**
 
 ---
 
