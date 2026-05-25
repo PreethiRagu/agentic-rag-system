@@ -2,3 +2,6 @@ streamlit
 crewai
 langchain-groq
 qdrant-client
+markitdown
+chonkie
+firecrawl-py
