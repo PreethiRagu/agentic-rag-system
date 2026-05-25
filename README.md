@@ -22,7 +22,27 @@ An advanced, production-ready Retrieval-Augmented Generation (RAG) application b
 - **Inference Engines:** Groq API (Llama 3.2 / DeepSeek-R1)
 - **Vector Storage:** Qdrant Cloud DB
 - **Document Processing:** MarkItDown, Chonkie Parsing Engine
+  
+---
 
+## 🔄 System Workflow
+
+1. User uploads a PDF or enters a query  
+2. Document is chunked using semantic chunking (Chonkie + MarkItDown)  
+3. Embeddings are generated and stored in Qdrant vector DB  
+4. CrewAI agents retrieve relevant chunks  
+5. LLM (LLaMA 3.2 / DeepSeek-R1) generates response  
+6. If context is insufficient → Firecrawl web search is triggered
+
+---
+
+##  Architecture
+
+User → Streamlit UI → CrewAI Agents → Vector DB (Qdrant)
+                         ↓
+                LLM (Groq: LLaMA / DeepSeek)
+                         ↓
+              Web Fallback (Firecrawl)
 ---
 
 ## 📂 Repository Structure
@@ -98,4 +118,24 @@ Local Setup Steps
    ```bash
    streamlit run app_deep_seek.py
    ```
+---
+## 🚀 Future Improvements
+
+- Add voice-based query interface  
+- Improve memory-based chat history  
+- Add authentication system  
+- Support more document formats
+
+---
+
+## 🎯 Why This Project
+
+This project demonstrates real-world AI system design including:
+
+- Retrieval-Augmented Generation (RAG)
+- Multi-agent AI systems
+- Vector database integration
+- LLM orchestration
+- Fallback reasoning systems
+---
       
