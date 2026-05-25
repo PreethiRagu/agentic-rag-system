@@ -119,6 +119,19 @@ Local Setup Steps
    streamlit run app_deep_seek.py
    ```
 ---
+## 📸 Screenshots
+
+### Home Page
+![Home](thumbnail/home.png)
+
+### Upload Page
+![Upload](thumbnail/upload.png)
+
+### Chat Interface
+![Chat](thumbnail/chat.png)
+
+---
+
 ## 🚀 Future Improvements
 
 - Add voice-based query interface  
