@@ -37,53 +37,13 @@ An advanced, production-ready Retrieval-Augmented Generation (RAG) application b
 ├── app_llama3.2.py          # Main deployment file utilizing Llama 3.2
 └── requirements.txt         # Tailored, clean production dependencies
 
-Local Execution Steps
-Clone the Repository
-Open your terminal or command prompt and clone this project repository to your local machine:
+# Installation and Setup Guide
 
-Bash
+Follow these step-by-step instructions to configure environment keys, install the required dependencies, and run the Agentic RAG application locally on your machine.
 
-Bash
-git clone [https://github.com/PreethiRagu/agentic-rag-system.git](https://github.com/PreethiRagu/agentic-rag-system.git)
-cd agentic-rag-system
-Set Up a Python Virtual Environment
-Creating an isolated environment prevents module conflicts with other projects on your machine.
+---
 
-Bash
-
-Bash
-# Create the environment folder named '.venv'
-python -m venv .venv
-
-# Activate the environment:
-# On Windows (Command Prompt / PowerShell):
-.venv\Scripts\activate
-
-# On macOS / Linux:
-source .venv/bin/activate
-Install Required Dependencies
-Install the required packages from the project's dependency list:
-
-Bash
-
-Bash
-pip install -r requirements.txt
-Configure Local Environment Variables
-Create a new file in the root folder of the project named exactly .env and add your secure cloud API infrastructure connections:
-
-Code snippet
-
-Code snippet
-GROQ_API_KEY="your-groq-api-key-here"
-QDRANT_URL="your-qdrant-cluster-url-here"
-QDRANT_API_KEY="your-qdrant-api-key-here"
-FIRECRAWL_API_KEY="your-firecrawl-api-key-here"
-⚠️ Security Warning: Never commit your filled .env file to GitHub. The project's .gitignore file is configured to keep these keys private.
-
-Boot up the Application Dashboard
-Run the primary Streamlit service to open the interactive user interface in your web browser:
-
-Bash
-
-Bash
-streamlit run app_llama3.2.py
+## 🛠️ Prerequisites
+Ensure you have **Python 3.10 or Python 3.11** installed on your system. You can verify this by opening your terminal or command prompt and running:
+```bash
+python --version
