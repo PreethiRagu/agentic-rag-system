@@ -25,7 +25,7 @@ An advanced, production-ready Retrieval-Augmented Generation (RAG) application b
   
 ---
 
-## 🔄 System Workflow
+##  System Workflow
 
 1. User uploads a PDF or enters a query  
 2. Document is chunked using semantic chunking (Chonkie + MarkItDown)  
@@ -36,16 +36,14 @@ An advanced, production-ready Retrieval-Augmented Generation (RAG) application b
 
 ---
 
-##  Architecture
+##  System Architecture
 
-User → Streamlit UI → CrewAI Agents → Vector DB (Qdrant)
-                         ↓
-                LLM (Groq: LLaMA / DeepSeek)
-                         ↓
-              Web Fallback (Firecrawl)
+The following diagram represents the end-to-end workflow of the Agentic RAG system:
+
+![Architecture](thumbnail/architecture.png)
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 ├── assets/                  # UI assets and logos
@@ -132,7 +130,7 @@ Local Setup Steps
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Add voice-based query interface  
 - Improve memory-based chat history  
@@ -141,7 +139,7 @@ Local Setup Steps
 
 ---
 
-## 🎯 Why This Project
+##  Why This Project
 
 This project demonstrates real-world AI system design including:
 
