@@ -37,7 +37,8 @@ An advanced, production-ready Retrieval-Augmented Generation (RAG) application b
 ├── app_llama3.2.py          # Main deployment file utilizing Llama 3.2
 └── requirements.txt         # Tailored, clean production dependencies
 
-# Installation and Setup Guide
+---
+##📦 Installation and Setup Guide
 
 Follow these step-by-step instructions to configure environment keys, install the required dependencies, and run the Agentic RAG application locally on your machine.
 
@@ -47,3 +48,4 @@ Follow these step-by-step instructions to configure environment keys, install th
 Ensure you have **Python 3.10 or Python 3.11** installed on your system. You can verify this by opening your terminal or command prompt and running:
 ```bash
 python --version
+
